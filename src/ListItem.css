@@ -31,7 +31,7 @@
 
 .ListItem-change {
     width: 25%;
-    margin: 0px 10px;
+    margin: 0px 0px;
     text-align: center;
 }
 
@@ -44,5 +44,5 @@
 }
 
 .change-red {
-    background-color: #FF7979;
+    background-color: rgb(255, 140, 140);
 }

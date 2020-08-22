@@ -5,15 +5,31 @@ import './ListHeader';
 import ListHeader from './ListHeader';
 import ListItem from './ListItem';
 
-function Content() {
+function Content(props) {
+    let loading = null;
+    let listItems = [];
+
+    if (!props.isLoaded) {
+        loading = <p>Loading..</p>
+    }
+    if (props.isLoaded) {
+        loading = null;
+
+        for (let i = 0; i < props.renderCount; i++) {
+            listItems.push(
+                <ListItem key={props.data[i].id} rank={props.data[i].rank} name={props.data[i].name} price={'$' + parseFloat(props.data[i].priceUsd).toFixed(5).toString()} change={parseFloat(props.data[i].changePercent24Hr).toFixed(2).toString() + '%'}/>
+            );
+        }
+
+        // listItem = <ListItem rank={props.data[0].rank} name={props.data[0].name} price={props.data[0].priceUsd} change={props.data[0].changePercent24Hr}/>
+    }
+
     return(
         <div className='Content'>
             <ListHeader />
 
-            <ListItem rank='1' name='Bitcoin' price='$5555' change='3.15%'/>
-            <ListItem rank='2' name='Another coin' price='$5.153' change='15.05%'/>
-            <ListItem rank='3' name='Yet another coin' price='$55.8' change='-0.05%'/>
-            <ListItem rank='4' name='Yerli ve milli coin' price='$8' change='0%'/>
+            {loading}
+            {listItems}
         </div>
     );
 }

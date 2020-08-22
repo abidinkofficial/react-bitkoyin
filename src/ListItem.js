@@ -6,7 +6,6 @@ let changeClassName = 'ListItem-change change-gray';
 function ListItem(props) {
     if (parseFloat(props.change) > 0) {
         changeClassName = 'ListItem-change change-green';
-        console.log(parseFloat(props.change));
     } else if (parseFloat(props.change) < 0) {
         changeClassName = 'ListItem-change change-red'
     } else if (parseFloat(props.change) === 0) {
