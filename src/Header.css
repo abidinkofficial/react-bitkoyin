@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    margin: 25px 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 48px;
+    background: linear-gradient(0deg, rgb(255, 251, 0) 25%, rgba(255,255,255,1) 25%);
+}
+
+.header-logo:hover {
+    background: linear-gradient(0deg, rgb(255, 251, 0) 45%, rgba(255,255,255,1) 45%);
+}
+
+.header-logo-bold {
+    font-weight: bold;
+}
+
+.header-search-button {
+    border: none;
+    cursor: pointer;
+    height: 58px;
+    background-color: white;
+    background: linear-gradient(0deg, rgb(255, 251, 0) 25%, rgba(255,255,255,1) 25%);
+}
+
+.header-search-button:hover {
+    background: linear-gradient(0deg, rgb(255, 251, 0) 45%, rgba(255,255,255,1) 45%);
+}
+
+.header-search-button i {
+    font-size: 48px;
+}
