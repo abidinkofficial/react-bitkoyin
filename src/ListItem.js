@@ -8,7 +8,7 @@ function ListItem(props) {
         changeClassName = 'ListItem-change change-green';
     } else if (parseFloat(props.change) < 0) {
         changeClassName = 'ListItem-change change-red'
-    } else if (parseFloat(props.change) === 0) {
+    } else if (parseFloat(props.change) === 0 || isNaN(parseFloat(props.change))) {
         changeClassName = 'ListItem-change change-gray'
     }
 
