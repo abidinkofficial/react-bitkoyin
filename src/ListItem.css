@@ -1,0 +1,48 @@
+.ListItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    font-size: 24px;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    margin-bottom: 5px;
+}
+
+.ListItem:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ListItem-rank {
+    width: 5%;
+    margin: 0px 10px;
+}
+
+.ListItem-name {
+    width: 45%;
+    margin: 0px 10px;
+}
+
+.ListItem-price {
+    width: 25%;
+    margin: 0px 10px;
+}
+
+.ListItem-change {
+    width: 25%;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.change-gray {
+    background-color: rgb(221, 221, 221);
+}
+
+.change-green {
+    background-color: rgb(150, 255, 148);
+}
+
+.change-red {
+    background-color: #FF7979;
+}

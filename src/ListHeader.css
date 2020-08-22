@@ -1,0 +1,33 @@
+.ListHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(0deg, rgb(255, 251, 0) 35%, rgba(255,255,255,1) 35%);
+    margin-bottom: 5px;
+}
+
+.ListHeader-rank {
+    width: 5%;
+    margin: 0px 10px;
+}
+
+.ListHeader-name {
+    width: 45%;
+    margin: 0px 10px;
+}
+
+.ListHeader-price {
+    width: 25%;
+    margin: 0px 10px;
+}
+
+.ListHeader-change {
+    width: 25%;
+    margin: 0px 10px;
+    text-align: center;
+}
