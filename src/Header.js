@@ -2,10 +2,13 @@ import React from 'react';
 import './Header.css'
 
 function Header() {
-    return(
+    return (
         <header className='Header'>
-            <a href='/' className='header-logo'>bit<span className='header-logo-bold'>koyin!</span></a>
-            <button className='header-search-button'><i className='material-icons'>search</i></button>
+            <a href='/' className='Header-logo'>bit<span className='Header-logo-bold'>koyin!</span></a>
+            <div className='Header-search-box'>
+                <input className='Header-search-text' type='text' placeholder='Ara'></input>
+                <button className='Header-search-button'><i className='material-icons'>search</i></button>
+            </div>
         </header>
     );
 }

@@ -4,35 +4,62 @@ header {
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
-.header-logo {
+.Header-logo {
     font-size: 48px;
     background: linear-gradient(0deg, rgb(255, 251, 0) 35%, rgba(255,255,255,1) 35%);
 }
 
-.header-logo:hover {
+.Header-logo:hover {
     background: linear-gradient(0deg, rgb(255, 251, 0) 55%, rgba(255,255,255,1) 55%);
 }
 
-.header-logo-bold {
+.Header-logo-bold {
     font-weight: bold;
 }
 
-.header-search-button {
+.Header-search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.Header-search-text {
+    height: 36px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 24px;
+    border: none;
+    width: 250px;
+    transition: .2s;
+    background: linear-gradient(0deg, rgb(255, 251, 0) 35%, rgba(255,255,255,1) 35%);
+}
+
+.Header-search-text::placeholder {
+    font-family: 'Recursive', sans-serif;
+    padding-left: 5px;
+    font-size: 24px;
+    line-height: 58px;
+}
+
+.Header-search-text:focus {
+    width: 300px;
+}
+
+.Header-search-button {
+    height: 36px;
     border: none;
     cursor: pointer;
-    height: 58px;
     background-color: white;
     background: linear-gradient(0deg, rgb(255, 251, 0) 35%, rgba(255,255,255,1) 35%);
 }
 
-.header-search-button:hover {
+.Header-search-button:hover {
     background: linear-gradient(0deg, rgb(255, 251, 0) 55%, rgba(255,255,255,1) 55%);
 }
 
-.header-search-button i {
-    font-size: 48px;
+.Header-search-button i {
+    font-size: 36px;
 }

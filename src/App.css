@@ -27,11 +27,13 @@ a {
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;
+  color: rgb(36, 36, 36);
   padding: 0px 5px;
   margin: 25px 25px;
   background: linear-gradient(0deg, rgb(255, 251, 0) 35%, rgba(255,255,255,1) 35%);
 }
 
 .more-button:hover {
+  color: black;
   background: linear-gradient(0deg, rgb(255, 251, 0) 55%, rgba(255,255,255,1) 55%);
 }
