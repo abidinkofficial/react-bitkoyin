@@ -14,10 +14,10 @@ function ListItem(props) {
 
     return(
         <div className='ListItem'>
-            <div className='ListItem-rank'>{props.rank}</div>
-            <div className='ListItem-name'>{props.name}</div>
-            <div className='ListItem-price'>{props.price}</div>
-            <div className={changeClassName}>{props.change}</div>
+            <div className='ListItem-rank'><span className='ListItem-mobile'>#</span>{props.rank}</div>
+            <div className='ListItem-name'><span className='ListItem-mobile'>adı</span>{props.name}</div>
+            <div className='ListItem-price'><span className='ListItem-mobile'>fiyat</span>{props.price}</div>
+            <div className='ListItem-change-container'><span className='ListItem-mobile'>değişim</span><span className={changeClassName}>{props.change}</span></div>
         </div>
     );
 }

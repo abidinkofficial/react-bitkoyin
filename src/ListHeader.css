@@ -22,12 +22,18 @@
 }
 
 .ListHeader-price {
-    width: 25%;
+    width: 30%;
     margin: 0px 10px;
 }
 
 .ListHeader-change {
-    width: 25%;
+    width: 20%;
     margin: 0px 0px;
     text-align: center;
+}
+
+@media (max-width: 765px) {
+    .ListHeader {
+        display: none;
+    }
 }
